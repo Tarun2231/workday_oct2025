@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { Table } from '../components/ui/Table'
-import { Clock, CheckCircle, XCircle, Calendar } from 'lucide-react'
+import { CheckCircle, XCircle, Calendar } from 'lucide-react'
 import { leaveRequests, LeaveRequest } from '../data/mockData'
 
 const Attendance = () => {
@@ -152,7 +151,7 @@ const Attendance = () => {
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
             Leave Requests
           </h2>
-          <Table data={leaveRequests} columns={leaveColumns} />
+          <Table data={leaveRequests as any} columns={leaveColumns as any} />
         </div>
       </Card>
     </div>

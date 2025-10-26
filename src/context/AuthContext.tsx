@@ -32,7 +32,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     }
   }, [user])
 
-  const login = (email: string, password: string, role: UserRole) => {
+  const login = (email: string, _password: string, role: UserRole) => {
     const mockUser: User = {
       id: '1',
       email,

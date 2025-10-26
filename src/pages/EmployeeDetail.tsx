@@ -1,9 +1,9 @@
-import React from 'react'
+import { } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
-import { ArrowLeft, Mail, Phone, MapPin, Calendar, Briefcase, DollarSign, FileText } from 'lucide-react'
+import { ArrowLeft, Mail, Calendar, Briefcase, DollarSign, FileText } from 'lucide-react'
 import { employees } from '../data/mockData'
 
 const EmployeeDetail = () => {
@@ -30,7 +30,7 @@ const EmployeeDetail = () => {
     { stage: 'Recruit', completed: true },
     { stage: 'Onboard', completed: employee.status !== 'onboarding' },
     { stage: 'Active', completed: employee.status === 'active' || employee.status === 'offboarding' || employee.status === 'exited' },
-    { stage: 'Performance', completed: employee.status !== 'onboarding' && employee.status !== 'recruit' },
+    { stage: 'Performance', completed: employee.status === 'active' },
     { stage: employee.status === 'exited' ? 'Exited' : 'Offboarding', completed: employee.status === 'exited' },
   ]
 

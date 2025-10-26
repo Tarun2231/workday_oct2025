@@ -1,9 +1,9 @@
-import React from 'react'
+import { } from 'react'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { useNavigate } from 'react-router-dom'
-import { Briefcase, Mail, Calendar } from 'lucide-react'
-import { employees, Employee } from '../data/mockData'
+import { Briefcase, Mail } from 'lucide-react'
+import { employees } from '../data/mockData'
 
 const Employees = () => {
   const navigate = useNavigate()

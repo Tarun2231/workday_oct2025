@@ -1,4 +1,4 @@
-import React from 'react'
+import { } from 'react'
 import { Card } from '../components/ui/Card'
 import { motion } from 'framer-motion'
 import { Star, TrendingUp, Award, Target } from 'lucide-react'
@@ -17,7 +17,7 @@ import {
   PolarRadiusAxis,
   Radar
 } from 'recharts'
-import { performances, Performance as PerfData } from '../data/mockData'
+import { performances } from '../data/mockData'
 
 const Performance = () => {
   const performanceData = [

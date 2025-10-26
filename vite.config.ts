@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/workday_oct2025/',
   plugins: [react()],
   server: {
     port: 3000,

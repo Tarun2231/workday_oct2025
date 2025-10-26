@@ -1,9 +1,9 @@
-import React from 'react'
+import { } from 'react'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { useTheme } from '../context/ThemeContext'
 import { useAuth } from '../context/AuthContext'
-import { User, Bell, Moon, Sun, Mail, Key, Camera } from 'lucide-react'
+import { User, Bell, Moon, Sun, Key, Camera } from 'lucide-react'
 
 const Settings = () => {
   const { theme, toggleTheme } = useTheme()

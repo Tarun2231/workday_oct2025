@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { Modal } from '../components/ui/Modal'
 import { Table } from '../components/ui/Table'
-import { Plus, MapPin, Briefcase, Clock } from 'lucide-react'
+import { Plus } from 'lucide-react'
 import { jobs, candidates, Job, Candidate } from '../data/mockData'
 
 const Recruitment = () => {
@@ -97,7 +96,7 @@ const Recruitment = () => {
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
             Active Job Postings
           </h2>
-          <Table data={jobs} columns={jobColumns} />
+          <Table data={jobs as any} columns={jobColumns as any} />
         </div>
       </Card>
 
@@ -107,7 +106,7 @@ const Recruitment = () => {
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
             Candidate Pipeline
           </h2>
-          <Table data={candidates} columns={candidateColumns} />
+          <Table data={candidates as any} columns={candidateColumns as any} />
         </div>
       </Card>
 

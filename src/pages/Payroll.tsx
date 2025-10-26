@@ -1,4 +1,4 @@
-import React from 'react'
+import { } from 'react'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { Table } from '../components/ui/Table'
@@ -146,7 +146,7 @@ const Payroll = () => {
               Generate Report
             </Button>
           </div>
-          <Table data={payrolls} columns={payrollColumns} />
+          <Table data={payrolls as any} columns={payrollColumns as any} />
         </div>
       </Card>
     </div>
